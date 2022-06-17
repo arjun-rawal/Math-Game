@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head style="background-color:#33475b">
+<title><fibt MATH GAME   </title>
+<head>
+<style>
+ body {
+        background-color: lightblue;
+      }
+</style>
+<body>
+
+<Header> <font size="+4">Math Game</font></Header>
+<style>
+    p {
+        font-size:50px
+    }
+</style>
+<p> <font size ="+30"> </font> </p>
+<p id="demo"></p>
+<style>
+    header {
+        color: rgb(255, 0, 0)
+    }
+</style>
+
+<header><font size="+30"> <u>Addition </u></font></header>
+<style>
+    button {
+           background-color: rgb(0, 47, 255);
+           font-size: 50px
+         }
+   </style>
+
+<button onclick= "addition(25)">Easy</button><br><br>
+<button onclick= "addition(100)">Medium</button><br><br>
+<button onclick= "addition(1000)">Hard</button><br><br>
+<button onclick= "addition(10000)">Insane</button><br><br>    
+
+
+<script> 
+    function addition(g) {
+        var x = Math.floor(Math.random() * g) + 1;
+        var y = Math.floor(Math.random() * g) + 1;
+        var z = x+y;
+        var answer = prompt("What is " + x + "+" + y);
+        if (answer == z) { 
+            document.getElementById("demo").innerHTML = "Correct!"
+        }
+        else {
+            document.getElementById("demo").innerHTML = "Incorrect!"
+    }};
+
+</script>
+<style>
+    p {
+        font-size:50px
+    }
+</style>
+<p> </p>
+<p id = "subtraction"></p>
+<header><font size="+30"> <u>Subtraction </u></font></header>
+<style>
+    button {
+           background-color: rgb(0, 47, 255);
+           font-size: 50px
+         }
+   </style>
+   
+<button onclick= "subtraction(25)">Easy</button><br><br>
+<button onclick= "subtraction(100)">Medium</button><br><br>
+<button onclick= "subtraction(1000)">Hard</button><br><br>
+<button onclick= "subtraction(10000)">Insane</button><br><br>
+<script> 
+    function subtraction(g) {
+        var x = Math.floor(Math.random() * g) + 1;
+        var y = Math.floor(Math.random() * g) + 1;
+        var z = x-y;
+        var answer = prompt("What is " + x + "-" + y);
+        if (answer == z) { 
+            document.getElementById("subtraction").innerHTML = "Correct!"
+        }
+        else {
+            document.getElementById("subtraction").innerHTML = "Incorrect!"
+    }};
+   
+    
+</script>
+<p> </p>
+<p id = "multiplication"></p>
+<header><font size="+30"> <u>Multiplication </u></font></header>
+<style>
+    button {
+           background-color: rgb(0, 47, 255);
+           font-size: 50px
+         }
+   </style>
+   
+<button onclick= "multiplication(10)">Easy</button><br><br>
+<button onclick= "multiplication(25)">Medium</button><br><br>
+<button onclick= "multiplication(100)">Hard</button><br><br>
+<button onclick= "multiplication(1000)">Insane</button><br><br>
+<script> 
+    function multiplication(g) {
+        var x = Math.floor(Math.random() * g) + 1;
+        var y = Math.floor(Math.random() * g) + 1;
+        var z = x*y;
+        var answer = prompt("What is " + x + "x" + y);
+        if (answer == z) { 
+            document.getElementById("multiplication").innerHTML = "Correct!"
+        }
+        else {
+            document.getElementById("multiplication").innerHTML = "Incorrect!"
+    }};
+
+
+</script>
+
+<p> </p>
+<p id = "division"></p>
+<header><font size="+30"> <u>Division </u></font></header>
+<style>
+    button {
+           background-color: rgb(0, 47, 255);
+           font-size: 50px
+         }
+   </style>
+   
+<button onclick= "division(25)">Easy</button><br><br>
+<button onclick= "division(50)">Medium</button><br><br>
+<button onclick= "division(100)">Hard</button><br><br>
+<button onclick= "division(1000)">Insane</button><br><br>
+<script> 
+    function division(g) {
+        var x = Math.floor(Math.random() * g) + 1;
+        var y = Math.floor(Math.random() * g) + 1;
+        while (x%y != 0){
+            var x = Math.floor(Math.random() * g) + 1;
+            var y = Math.floor(Math.random() * g) + 1;
+        };
+        var z = x/y;
+        var answer = prompt("What is " + x + "/" + y);
+        if (answer == z) { 
+            document.getElementById("division").innerHTML = "Correct!"
+        }
+        else {
+            document.getElementById("division").innerHTML = "Incorrect!"
+    }};
+
+
+</script>
+</body>
+</html>
